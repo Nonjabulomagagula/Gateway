@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="10" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-09T09:13:09 SAST" name="Default suite" finished-at="2022-03-09T09:14:14 SAST" duration-ms="64545">
+    <groups>
+    </groups>
+    <test started-at="2022-03-09T09:13:09 SAST" name="Default test" finished-at="2022-03-09T09:14:14 SAST" duration-ms="64545">
+      <class name="getIDrequest.GetData">
+        <test-method signature="auditRetrieveFBData()[pri:1, instance:getIDrequest.GetData@4b5d6a01]" started-at="2022-03-09T09:13:10 SAST" name="auditRetrieveFBData" finished-at="2022-03-09T09:13:15 SAST" duration-ms="5584" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [200] but found [404]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [200] but found [404]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:907)
+at org.testng.Assert.assertEquals(Assert.java:917)
+at getIDrequest.GetData.auditRetrieveFBData(GetData.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- auditRetrieveFBData -->
+        <test-method signature="validateBankingDetails()[pri:2, instance:getIDrequest.GetData@4b5d6a01]" started-at="2022-03-09T09:13:15 SAST" name="validateBankingDetails" finished-at="2022-03-09T09:13:17 SAST" duration-ms="1281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateBankingDetails -->
+        <test-method signature="validateClientInfo()[pri:3, instance:getIDrequest.GetData@4b5d6a01]" started-at="2022-03-09T09:13:17 SAST" name="validateClientInfo" finished-at="2022-03-09T09:13:18 SAST" duration-ms="1240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateClientInfo -->
+        <test-method signature="mfpFindPolByPolnum()[pri:4, instance:getIDrequest.GetData@4b5d6a01]" started-at="2022-03-09T09:13:18 SAST" name="mfpFindPolByPolnum" finished-at="2022-03-09T09:13:26 SAST" duration-ms="8502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mfpFindPolByPolnum -->
+        <test-method signature="cdiProdCheck()[pri:5, instance:getIDrequest.GetData@4b5d6a01]" started-at="2022-03-09T09:13:26 SAST" name="cdiProdCheck" finished-at="2022-03-09T09:13:30 SAST" duration-ms="3381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cdiProdCheck -->
+        <test-method signature="cdiSearchByBusinessType()[pri:6, instance:getIDrequest.GetData@4b5d6a01]" started-at="2022-03-09T09:13:30 SAST" name="cdiSearchByBusinessType" finished-at="2022-03-09T09:13:32 SAST" duration-ms="1954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cdiSearchByBusinessType -->
+        <test-method signature="cdiIDnumSearch()[pri:7, instance:getIDrequest.GetData@4b5d6a01]" started-at="2022-03-09T09:13:32 SAST" name="cdiIDnumSearch" finished-at="2022-03-09T09:13:35 SAST" duration-ms="3163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cdiIDnumSearch -->
+        <test-method signature="mfpFindQuote()[pri:8, instance:getIDrequest.GetData@4b5d6a01]" started-at="2022-03-09T09:13:35 SAST" name="mfpFindQuote" finished-at="2022-03-09T09:13:41 SAST" duration-ms="6159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mfpFindQuote -->
+        <test-method signature="mfpApplyNewBusiness()[pri:9, instance:getIDrequest.GetData@4b5d6a01]" started-at="2022-03-09T09:13:41 SAST" name="mfpApplyNewBusiness" finished-at="2022-03-09T09:13:51 SAST" duration-ms="9665" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mfpApplyNewBusiness -->
+        <test-method signature="mfpNewBusinessQuote()[pri:10, instance:getIDrequest.GetData@4b5d6a01]" started-at="2022-03-09T09:13:51 SAST" name="mfpNewBusinessQuote" finished-at="2022-03-09T09:13:52 SAST" duration-ms="1638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mfpNewBusinessQuote -->
+        <test-method signature="mfpsubmitNewBusinessClient()[pri:11, instance:getIDrequest.GetData@4b5d6a01]" started-at="2022-03-09T09:13:52 SAST" name="mfpsubmitNewBusinessClient" finished-at="2022-03-09T09:14:14 SAST" duration-ms="21589" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mfpsubmitNewBusinessClient -->
+        <test-method signature="validateBankingDetailsErrorcodes()[pri:12, instance:getIDrequest.GetData@4b5d6a01]" started-at="2022-03-09T09:14:14 SAST" name="validateBankingDetailsErrorcodes" finished-at="2022-03-09T09:14:14 SAST" duration-ms="2" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.restassured.specification.RequestSpecification.pathParam(String, Object)" because the return value of "getIDrequest.GetData.given()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.restassured.specification.RequestSpecification.pathParam(String, Object)" because the return value of "getIDrequest.GetData.given()" is null
+at getIDrequest.GetData.validateBankingDetailsErrorcodes(GetData.java:582)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateBankingDetailsErrorcodes -->
+      </class> <!-- getIDrequest.GetData -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
